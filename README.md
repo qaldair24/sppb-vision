@@ -265,8 +265,8 @@ ESP32 firmware used for MPU6050 acquisition and communication.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-cd YOUR_REPOSITORY
+git clone https://github.com/qaldair24/sppb-vision.git
+cd sppb-vision
 ```
 
 ### 2. Create a Python virtual environment
@@ -419,18 +419,32 @@ Changing detection thresholds, fusion rules, or event definitions should result 
 
 ## My Contributions
 
-> **IMPORTANT: Replace this section with your actual contributions before submitting this repository as a code sample.**
+I designed and developed the complete system from end to end.
 
-This project was developed collaboratively. My contributions focused on:
+My contributions included:
 
-- [Describe the Python modules or features you personally worked on]
-- [Describe any computer vision work you contributed]
-- [Describe any IMU, ESP32, or data-processing work you contributed]
-- [Describe debugging, testing, validation, or integration work you performed]
+- Designing the overall software architecture and project structure
+- Developing the Python application and organizing it into multiple modules
+- Implementing the real-time camera acquisition and processing pipeline
+- Integrating MediaPipe for human pose estimation
+- Developing the logic used to calculate joint angles and detect Sit-to-Stand movement phases
+- Implementing the automatic detection of 5xSTS repetitions and movement events
+- Developing the lumbar IMU data acquisition and processing pipeline
+- Programming and integrating the ESP32 and MPU6050 sensor
+- Implementing UDP communication between the ESP32 and the Python application
+- Developing signal-processing logic for IMU-based movement detection
+- Implementing the synchronization and fusion of camera and IMU events
+- Developing the performance metrics and repetition-level calculations
+- Creating the graphical interface for data collection
+- Implementing Spanish voice instructions for the assessment workflow
+- Adding input validation, error handling, and data-quality checks
+- Developing camera, IMU, and software-version validation tools
+- Implementing automatic generation of CSV, JSON, graphs, and annotated video outputs
+- Testing and debugging the interaction between the software, camera, and sensor hardware
+- Creating the technical documentation and defining the data structure used by the system
+- Managing version-controlled parameters to support reproducibility
 
-Through this project, I gained experience integrating software, computer vision, sensor data, and real-time processing into a complete application.
-
----
+This project gave me experience building a complete software system that combines computer vision, real-time sensor data, hardware communication, signal processing, user interfaces, data validation, and automated result generation.
 
 ## What I Learned
 
