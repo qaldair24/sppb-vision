@@ -1,0 +1,35 @@
+5xSTS-VISION — Versión 4.1.0-MAC-M1
+Algoritmo: 5xSTS-CAM-IMU-L5-2026.07
+Estado: CONGELADA PARA RECOLECCIÓN EN macOS
+Fecha: 2026-08-19
+
+EQUIPO OBJETIVO
+
+- MacBook Air M1 (2020), 8 GB.
+- macOS Sonoma 14.6.1.
+- Python 3.12.4 ARM64 instalado en /Library/Frameworks.
+
+CAMBIOS DE PLATAFORMA RESPECTO A V4.0.0
+
+- Entorno virtual aislado en .venv.
+- Dependencias fijadas compatibles con Python 3.12 y Apple Silicon.
+- Lanzadores .command para instalar, iniciar y comprobar el sistema.
+- Voz española Mónica mediante la función nativa say de macOS.
+- Señal GO mediante el reproductor nativo afplay.
+- Apertura de resultados mediante Finder.
+- Prueba previa de cámara y guía de permisos de macOS.
+- Eliminación de lanzadores y reparaciones exclusivas de Windows.
+
+SIN CAMBIOS EN EL ALGORITMO CIENTÍFICO
+
+- Algoritmo: 5xSTS-CAM-IMU-L5-2026.07.
+- Definiciones GO, MO, R, D y S sin cambios.
+- Umbrales de cámara, IMU y fusión sin cambios.
+- Métricas, subpuntaje de silla y reglas de calidad sin cambios.
+
+REGLA DE CONGELAMIENTO
+
+No cambie configuracion_v4.py, main.py, analisis_imu_sts.py ni
+metricas_sts.py durante la recolección. Si se modifica cualquier umbral,
+evento o regla de fusión, debe asignarse una versión nueva y separar los
+ensayos recolectados con cada versión.
